@@ -1,0 +1,56 @@
+plugins {
+    id 'java'
+    id 'com.gradleup.shadow' version '9.6.0'
+}
+
+group = 'dev.despical'
+version = '1.0.0'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
+dependencies {
+    compileOnly 'io.papermc.paper:paper-api:1.21.11-R0.1-SNAPSHOT'
+
+    implementation('dev.despical:commons:2.1.2') {
+        exclude group: 'org.slf4j'
+    }
+    implementation 'dev.despical:command-framework:1.6.5'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release = 25
+}
+
+tasks.processResources {
+    def props = [version: version]
+    inputs.properties props
+    filteringCharset = 'UTF-8'
+
+    filesMatching('plugin.yml') {
+        expand props
+    }
+}
+
+tasks.jar {
+    enabled = false
+}
+
+tasks.shadowJar {
+    minimize()
+
+    relocate 'dev.despical.commons', 'dev.despical.smplugin.lib.commons'
+    relocate 'dev.despical.commandframework', 'dev.despical.smplugin.lib.commandframework'
+
+    exclude 'META-INF/**'
+
+    archiveFileName = "SMPlugin-${version}.jar"
+}
+
+tasks.build {
+    dependsOn tasks.shadowJar
+}

@@ -1,0 +1,127 @@
+motd:
+  enabled: true
+  # Approximate width of the two-line server-list text area in Minecraft pixels.
+  center-width: 270
+  line-1: '<white>◀</white> <bold><#3AA9FF>K A Y I K</#3AA9FF></bold> <white>▶</white>'
+  line-2: '<bold><gradient:#FFBF55:#FFFF55>SURVIVAL MULTIPLAYER MINECRAFT</gradient></bold>'
+
+connection-messages:
+  join:
+    enabled: true
+    message: '<#475569>[</#475569><#55FF55>+</#55FF55><#475569>]</#475569> <#CBD5E1>%player%</#CBD5E1>'
+  quit:
+    enabled: true
+    message: '<#475569>[</#475569><#FF5555>-</#FF5555><#475569>]</#475569> <#CBD5E1>%player%</#CBD5E1>'
+
+death-location:
+  enabled: true
+  date-format: 'dd.MM.yyyy HH:mm:ss'
+  message: '<#FFAA55>You died at </#FFAA55><#64748B>[</#64748B><#94A3B8>X: </#94A3B8><#F8FAFC>%x%</#F8FAFC><#64748B>, </#64748B><#94A3B8>Y: </#94A3B8><#F8FAFC>%y%</#F8FAFC><#64748B>, </#64748B><#94A3B8>Z: </#94A3B8><#F8FAFC>%z%</#F8FAFC><#64748B>, </#64748B><#94A3B8>World: </#94A3B8><#F8FAFC>%world%</#F8FAFC><#64748B>]</#64748B>'
+  info: '<#67E8F9>%player%</#67E8F9><#94A3B8> last died at </#94A3B8><#64748B>[</#64748B><#94A3B8>X: </#94A3B8><#F8FAFC>%x%</#F8FAFC><#64748B>, </#64748B><#94A3B8>Y: </#94A3B8><#F8FAFC>%y%</#F8FAFC><#64748B>, </#64748B><#94A3B8>Z: </#94A3B8><#F8FAFC>%z%</#F8FAFC><#64748B>, </#64748B><#94A3B8>World: </#94A3B8><#F8FAFC>%world%</#F8FAFC><#64748B>]</#64748B><#94A3B8> on </#94A3B8><#F8FAFC>%time%</#F8FAFC><#94A3B8>.</#94A3B8>'
+  no-record: '<#FF6B6B>No death record was found for <#F8FAFC>%player%</#F8FAFC>.'
+  target-offline: '<#FFB86C>%player% is offline, so the death information could not be sent.'
+  resent: '<#55FF55>The last death location was sent to %player% again.'
+
+command-errors:
+  correct-usage: '<#FF6B6B>Correct usage: <#FFFFFF>%usage%</#FFFFFF>'
+  only-players: '<#FF6B6B>This command can only be used by players.'
+  only-console: '<#FF6B6B>This command can only be used from the console.'
+  no-permission: '<#FF6B6B>You do not have permission to use this command.'
+  must-be-op: '<#FF6B6B>You must be an operator to use this command.'
+  cooldown: '<#FFB86C>Please wait before using this command again.'
+
+plugin:
+  messages:
+    reloaded: '<#55FF55>SMPlugin configuration and messages reloaded successfully.'
+
+vanish:
+  messages:
+    enabled: '<#A7F3D0>You are now vanished.'
+    disabled: '<#FFB86C>You are no longer vanished.'
+
+chat:
+  formats:
+    player: '<#3AAFA9>%player%</#3AAFA9><#64748B>: </#64748B><#F8FAFC>%message%</#F8FAFC>'
+    admin: '<#FF5555><bold>[ADMIN]</bold></#FF5555> <#FF6B6B>%player%</#FF6B6B><#64748B>: </#64748B><#F8FAFC>%message%</#F8FAFC>'
+
+private-messages:
+  formats:
+    sender: '<#94A3B8>[You → %recipient%] </#94A3B8><#F8FAFC>%message%</#F8FAFC>'
+    recipient: '<#94A3B8>[%sender% → You] </#94A3B8><#F8FAFC>%message%</#F8FAFC>'
+    spy: '<#6B7280>[SPY] %sender% → %recipient%: </#6B7280><#F8FAFC>%message%</#F8FAFC>'
+  messages:
+    player-not-found: '<#FF6B6B>Online player not found: <#F8FAFC>%player%</#F8FAFC>'
+    cannot-message-self: '<#FF6B6B>You cannot send a private message to yourself.'
+    reply-target-offline: '<#FF6B6B>Your last private-message partner is not online.'
+    spy-enabled: '<#A7F3D0>Global message spy enabled.'
+    spy-disabled: '<#FFB86C>Global message spy disabled.'
+
+inventory:
+  messages:
+    player-not-found: '<#FF6B6B>Online player not found: <#F8FAFC>%player%</#F8FAFC>'
+    console-viewer-required: '<#FF6B6B>Console must specify <#F8FAFC>--viewer=PLAYER</#F8FAFC>.'
+    viewer-not-found: '<#FF6B6B>Online viewer not found: <#F8FAFC>%viewer%</#F8FAFC>'
+    opened: '<#67E8F9>%viewer%</#67E8F9><#94A3B8> is now viewing </#94A3B8><#A7F3D0>%target%</#A7F3D0><#94A3B8>''s inventory.</#94A3B8>'
+    ender-opened: '<#67E8F9>%viewer%</#67E8F9><#94A3B8> is now viewing </#94A3B8><#C4B5FD>%target%</#C4B5FD><#94A3B8>''s Ender Chest.</#94A3B8>'
+    view-only: '<#FFB86C>This inventory is view-only. You cannot move any items.'
+
+speed:
+  labels:
+    walk: 'walking'
+    fly: 'flight'
+  messages:
+    invalid-number: '<#FF6B6B>Speed must be a number between <#F8FAFC>0 and 10</#F8FAFC>.'
+    out-of-range: '<#FF6B6B>Speed must be between <#F8FAFC>0 and 10</#F8FAFC>.'
+    conflicting-flags: '<#FF6B6B>You cannot use <#F8FAFC>--walk</#F8FAFC> and <#F8FAFC>--fly</#F8FAFC> together.'
+    console-target-required: '<#FF6B6B>Console must specify an online player.'
+    player-not-found: '<#FF6B6B>Online player not found: <#F8FAFC>%player%</#F8FAFC>'
+    changed: '<#67E8F9>%target%</#67E8F9><#94A3B8>''s %mode% speed was set to </#94A3B8><#A7F3D0>%speed%</#A7F3D0><#94A3B8>.</#94A3B8>'
+    changed-by-other: '<#FF6B6B>%sender%</#FF6B6B><#94A3B8> set your %mode% speed to </#94A3B8><#A7F3D0>%speed%</#A7F3D0><#94A3B8>.</#94A3B8>'
+
+chatlog:
+  messages:
+    no-history: '<#FF6B6B>No saved chat history was found for <#F8FAFC>%player%</#F8FAFC>.'
+    header: '<#67E8F9><bold>Last %count% messages from %player%</bold></#67E8F9>'
+    chat-entry: "<hover:show_text:'<#94A3B8>%timestamp%</#94A3B8>'><#67E8F9>[CHAT]</#67E8F9> <#FF6B6B>%player%</#FF6B6B><#64748B>: </#64748B><#F8FAFC>%message%</#F8FAFC></hover>"
+    private-entry: "<hover:show_text:'<#94A3B8>%timestamp%</#94A3B8>'><#C4B5FD>[MSG → %recipient%]</#C4B5FD> <#FF6B6B>%player%</#FF6B6B><#64748B>: </#64748B><#F8FAFC>%message%</#F8FAFC></hover>"
+
+whereami:
+  messages:
+    private: "<#94A3B8>Your location is </#94A3B8><#64748B>[</#64748B><#94A3B8>X: </#94A3B8><#F8FAFC>%x%</#F8FAFC><#64748B>, </#64748B><#94A3B8>Y: </#94A3B8><#F8FAFC>%y%</#F8FAFC><#64748B>, </#64748B><#94A3B8>Z: </#94A3B8><#F8FAFC>%z%</#F8FAFC><#64748B>, </#64748B><#94A3B8>World: </#94A3B8><#F8FAFC>%world%</#F8FAFC><#64748B>]</#64748B> <click:run_command:'/whereami --all'><hover:show_text:'<#67E8F9>Click to share your location with everyone.</#67E8F9>'><#67E8F9><bold>[BROADCAST]</bold></#67E8F9></hover></click>"
+    broadcast: "<#FF6B6B>%player%</#FF6B6B><#94A3B8> shared a location: </#94A3B8><#64748B>[</#64748B><#94A3B8>X: </#94A3B8><#F8FAFC>%x%</#F8FAFC><#64748B>, </#64748B><#94A3B8>Y: </#94A3B8><#F8FAFC>%y%</#F8FAFC><#64748B>, </#64748B><#94A3B8>Z: </#94A3B8><#F8FAFC>%z%</#F8FAFC><#64748B>, </#64748B><#94A3B8>World: </#94A3B8><#F8FAFC>%world%</#F8FAFC><#64748B>]</#64748B> <click:run_command:'/tpa %player%'><hover:show_text:'<#55FF55>Click to send %player% a teleport request.</#55FF55>'><#55FF55><bold>[REQUEST TPA]</bold></#55FF55></hover></click>"
+
+tpa:
+  timeout-seconds: 60
+  teleport-delay-seconds: 3
+  messages:
+    player-not-found: '<#FF5555>Online player not found: <white>%player%</white>.'
+    cannot-request-self: '<#FF5555>You cannot send a teleport request to yourself.'
+    outgoing-request-pending: '<#FFB86C>You already have a pending teleport request to %target%.'
+    request-sent: '<gray>Teleport request sent to <#3AA9FF>%target%</#3AA9FF>. It expires in <white>%timeout% seconds</white>.</gray>'
+    request-received:
+      - ''
+      - '<#3AA9FF><bold>%requester%</bold></#3AA9FF> <gray>wants to teleport to you.</gray>'
+      - '<dark_gray>The request expires in %timeout% seconds.</dark_gray>'
+      - ''
+      - "  <click:run_command:'/tpaccept %requester%'><hover:show_text:'<#55FF55>Click to accept the request.'><#55FF55><bold>[✔ ACCEPT]</bold></#55FF55></hover></click>   <click:run_command:'/tpreject %requester%'><hover:show_text:'<#FF5555>Click to reject the request.'><#FF5555><bold>[✖ REJECT]</bold></#FF5555></hover></click>"
+      - ''
+    no-pending-request: '<#FF5555>You do not have a matching pending teleport request.'
+    requester-offline: '<#FF5555>%requester% is no longer online.'
+    teleport-failed: '<#FF5555>The teleport could not be completed.'
+    request-accepted-target: '<gray>You accepted <#3AA9FF>%requester%</#3AA9FF>''s teleport request.</gray>'
+    request-accepted-requester: '<gray><#3AA9FF>%target%</#3AA9FF> accepted your request. Teleporting...</gray>'
+    request-rejected-target: '<gray>You rejected <#FF5555>%requester%</#FF5555>''s teleport request.</gray>'
+    request-rejected-requester: '<#FF5555>%target% rejected your teleport request.'
+    request-expired-requester: '<#FFAA55>Your teleport request to %target% has expired.'
+    request-expired-target: '<#FFAA55>%requester%''s teleport request has expired.'
+    target-unavailable: '<#FFAA55>Your teleport request was cancelled because %target% left the server.'
+    requester-unavailable: '<#FFAA55>%requester%''s teleport request was cancelled because they left the server.'
+    teleport-countdown-actionbar: '<#FFBF55>Teleporting in <white>%seconds% %unit%</white>...</#FFBF55>'
+    teleport-cancelled-moved-actionbar: '<#FF5555>Teleport cancelled because you moved...</#FF5555>'
+    teleport-cancelled-target-left-actionbar: '<#FF5555>Teleport cancelled because the target left...</#FF5555>'
+    teleport-failed-actionbar: '<#FF5555>Teleport failed...</#FF5555>'
+    teleport-complete-actionbar: '<#55FF55>Teleport complete...</#55FF55>'
+    teleport-cancelled-target: '<#FFAA55>%requester% moved, so the teleport was cancelled.'
+    requests-disabled: '<#FFB86C>Incoming teleport requests are now disabled.'
+    requests-enabled: '<#A7F3D0>Incoming teleport requests are now enabled.'
+    target-requests-disabled: '<#FFB86C>%target% is not accepting teleport requests.'

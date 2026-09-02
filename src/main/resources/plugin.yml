@@ -1,0 +1,76 @@
+name: SMPlugin
+version: ${version}
+main: dev.despical.smplugin.SMPlugin
+api-version: '26.1'
+author: Despical
+description: MOTD and administration utilities for KAYIK SMP.
+
+permissions:
+  smplugin.*:
+    description: Grants access to every SMPlugin command.
+    default: op
+    children:
+      smplugin.command.gmc: true
+      smplugin.command.gms: true
+      smplugin.command.gma: true
+      smplugin.command.tphere: true
+      smplugin.command.tpall: true
+      smplugin.command.surface: true
+      smplugin.command.tpa: true
+      smplugin.command.msg: true
+      smplugin.command.spy: true
+      smplugin.command.chatlog: true
+      smplugin.command.invsee: true
+      smplugin.command.endersee: true
+      smplugin.command.speed: true
+      smplugin.command.vanish: true
+      smplugin.command.reload: true
+      smplugin.command.deathinfo: true
+  smplugin.command.gmc:
+    description: Allows use of /gmc [player].
+    default: op
+  smplugin.command.gms:
+    description: Allows use of /gms [player].
+    default: op
+  smplugin.command.gma:
+    description: Allows use of /gma [player].
+    default: op
+  smplugin.command.tphere:
+    description: Allows use of /tphere <player>.
+    default: op
+  smplugin.command.tpall:
+    description: Allows use of /tpall [player].
+    default: op
+  smplugin.command.surface:
+    description: Allows use of /surface [player].
+    default: op
+  smplugin.command.tpa:
+    description: Allows use of /tpa, /tpaccept and /tpreject.
+    default: true
+  smplugin.command.msg:
+    description: Allows use of /msg, /w and /r.
+    default: true
+  smplugin.command.spy:
+    description: Allows use of the global private-message spy.
+    default: op
+  smplugin.command.chatlog:
+    description: Allows viewing a player's last 50 saved chat messages.
+    default: op
+  smplugin.command.invsee:
+    description: Allows opening an online player's inventory for yourself or another player.
+    default: op
+  smplugin.command.endersee:
+    description: Allows opening an online player's Ender Chest for yourself or another player.
+    default: op
+  smplugin.command.speed:
+    description: Allows changing walking or flying speed for online players.
+    default: op
+  smplugin.command.vanish:
+    description: Allows use of /vanish and /v.
+    default: op
+  smplugin.command.reload:
+    description: Allows use of /smp reload.
+    default: op
+  smplugin.command.deathinfo:
+    description: Allows viewing and resending players' latest death information.
+    default: op
