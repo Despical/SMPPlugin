@@ -3,10 +3,10 @@
 [![CI](https://github.com/Despical/SMPPlugin/actions/workflows/build.yml/badge.svg)](https://github.com/Despical/SMPPlugin/actions/workflows/build.yml)
 ![Java 25](https://img.shields.io/badge/Java-25-007396.svg)
 ![Gradle](https://img.shields.io/badge/Gradle-9.7.0-079ec0?logo=gradle&logoColor=white)
-![Minecraft](https://img.shields.io/badge/Minecraft-1.21.11-62b47a)
+![Minecraft](https://img.shields.io/badge/Minecraft-26.1%2B-62b47a)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 
-SMPlugin is a Paper utility plugin built for KAYIK SMP. It provides practical administration, teleportation, chat, visibility, and quality-of-life tools in one lightweight plugin.
+SMPlugin is a Paper utility plugin that provides practical administration, teleportation, chat, visibility, and quality-of-life tools in one lightweight plugin.
 
 ---
 
@@ -26,7 +26,7 @@ SMPlugin is a Paper utility plugin built for KAYIK SMP. It provides practical ad
 ## Requirements
 
 - Java 25
-- Paper 1.21.11 or a compatible server implementation
+- A Paper-compatible server supporting Minecraft 26.1 or newer
 
 ---
 

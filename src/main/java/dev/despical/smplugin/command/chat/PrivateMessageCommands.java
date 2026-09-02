@@ -1,5 +1,5 @@
 /*
- * SMPlugin - A utility plugin for KAYIK SMP.
+ * SMPlugin - A utility plugin for Minecraft servers.
  * Copyright (C) 2026  Berke Akçen
  *
  * This program is free software: you can redistribute it and/or modify

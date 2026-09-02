@@ -3,7 +3,7 @@ version: ${version}
 main: dev.despical.smplugin.SMPlugin
 api-version: '26.1'
 author: Despical
-description: MOTD and administration utilities for KAYIK SMP.
+description: MOTD and administration utilities for Minecraft servers.
 
 permissions:
   smplugin.*:
